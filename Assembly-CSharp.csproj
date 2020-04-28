@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\colorChanging.cs" />
     <Compile Include="Assets\Scripts\player.cs" />
     <Compile Include="Assets\Scripts\rayCasting.cs" />
+    <Compile Include="Assets\Scripts\spriteBehavior.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/gsmith/Desktop/Code/TestUnity/TestUnity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

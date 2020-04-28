@@ -10,6 +10,10 @@ public class colorChanging : MonoBehaviour
     public GameObject cube;
     private MeshRenderer myRenderer;
     private Vector3 location = new Vector3(1, 2, 3);
+    string[] possibleNames = { "Joe", "Josh", "Dan", "Sue" };
+    int[] powersOfTwo = new int[5];
+    int[,] board = new int[3, 3];
+    List<string> names = new List<string>();
 
 
     void Start () {
