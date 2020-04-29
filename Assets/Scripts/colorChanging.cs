@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -15,12 +16,21 @@ public class colorChanging : MonoBehaviour
     int[,] board = new int[3, 3];
     List<string> names = new List<string>();
 
-
     void Start () {
+        StartCoroutine(DoSomething(possibleNames, .5f));
     }
 
     void Update(){
         //SpaceBarListener();
+    }
+
+    IEnumerator  DoSomething(string[] messages, float delay)
+    {
+        foreach (string msg in messages)
+        {
+            print(name);
+            yield return new WaitForSeconds(delay);
+        }
     }
 
     public void OnClickRenderColor () {
@@ -36,4 +46,8 @@ public class colorChanging : MonoBehaviour
         */
         
     }
+
+
+
+
 }
